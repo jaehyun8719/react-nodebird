@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import {Menu, Input, Row, Col} from 'antd';
+import { Menu, Input, Row, Col } from 'antd';
 import styled from 'styled-components';
 
 import UserProfile from '../components/UserProfile';
@@ -11,7 +11,7 @@ const SearchInput = styled(Input.Search)`
   vertical-align: middle;
 `;
 
-const AppLayout = ({children}) => {
+const AppLayout = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
@@ -32,7 +32,7 @@ const AppLayout = ({children}) => {
       </Menu>
       <Row>
         <Col xs={13} md={6}>
-          {isLoggedIn ? <UserProfile /> : <LoginForm />}
+          {isLoggedIn ? <UserProfile setIsLoggedIn={setIsLoggedIn} /> : <LoginForm setIsLoggedIn={setIsLoggedIn} />}
         </Col>
         <Col xs={11} md={12}>
           {children}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import 'antd/dist/antd.css'
 
-const NodeBird = ({Component}) => {
+const NodeBird = ({ Component }) => {
   return (
     <>
       <Head>
