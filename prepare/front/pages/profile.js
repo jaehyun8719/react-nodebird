@@ -6,8 +6,8 @@ import NicknameEditForm from "../components/NicknameEditForm";
 import FollowList from "../components/FollowList";
 
 const Profile = () => {
-  const followerList =[{ nickname: '재현'}, {nickname: '바보'}, {nickname: '노드버드 오피셜'}];
-  const followingList =[{ nickname: '재현'}, {nickname: '바보'}, {nickname: '노드버드 오피셜'}];
+  const followerList =[{nickname: '재현'}, {nickname: '바보'}, {nickname: '노드버드 오피셜'}];
+  const followingList =[{nickname: '재현'}, {nickname: '바보'}, {nickname: '노드버드 오피셜'}];
 
   return (
     <>
