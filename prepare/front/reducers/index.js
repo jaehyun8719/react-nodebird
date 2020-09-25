@@ -35,7 +35,7 @@ const rootReducer = ((state = initialState, action) => {
           user: action.data,
         },
       };
-    case 'LOG_IN':
+    case 'LOG_OUT':
       return {
         ...state,
         user: {
