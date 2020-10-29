@@ -16,6 +16,17 @@ const rootReducer = combineReducers({
     }
   },
   user,
+
+
+
+
+
+
+
+
+
+
+
   post,
 });
 
